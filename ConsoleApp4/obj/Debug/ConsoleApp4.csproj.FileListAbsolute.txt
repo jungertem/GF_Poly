@@ -1,0 +1,10 @@
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\nunit.framework.dll
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\nunit.framework.xml
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CopyComplete
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\temat\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb

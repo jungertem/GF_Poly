@@ -1,0 +1,12 @@
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\SromTests.dll
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\SromTests.pdb
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\ConsoleApp4.exe
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\nunit.framework.dll
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\ConsoleApp4.pdb
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\ConsoleApp4.exe.config
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\bin\Debug\nunit.framework.xml
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\obj\Debug\SromTests.csprojAssemblyReference.cache
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\obj\Debug\SromTests.csproj.CoreCompileInputs.cache
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\obj\Debug\SromTests.csproj.CopyComplete
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\obj\Debug\SromTests.dll
+C:\Users\temat\source\repos\ConsoleApp4\SromTests\obj\Debug\SromTests.pdb

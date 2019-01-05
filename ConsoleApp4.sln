@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GF2", "ConsoleApp4\GF2.csproj", "{CED5193C-734E-4AB5-9AA4-88919D8A54FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SromTests", "SromTests\SromTests.csproj", "{3E4A166F-69CE-4DB7-B47A-06596B9ACD88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED5193C-734E-4AB5-9AA4-88919D8A54FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED5193C-734E-4AB5-9AA4-88919D8A54FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED5193C-734E-4AB5-9AA4-88919D8A54FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED5193C-734E-4AB5-9AA4-88919D8A54FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E4A166F-69CE-4DB7-B47A-06596B9ACD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4A166F-69CE-4DB7-B47A-06596B9ACD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4A166F-69CE-4DB7-B47A-06596B9ACD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4A166F-69CE-4DB7-B47A-06596B9ACD88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6715875B-E21F-4586-91AF-5C877E54B6B6}
+	EndGlobalSection
+EndGlobal
