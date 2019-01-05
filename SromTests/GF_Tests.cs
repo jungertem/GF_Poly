@@ -49,9 +49,9 @@ namespace SromTests
             var hex11 = Program.Hex_to_Byte(aHex);
             var hex22 = Program.Hex_to_Byte(bHex);
 
-            var answer = Program.Mulltiplication(hex11, hex22);
+            var answer = Program.MulltiplicationToStr(hex11, hex22);
             
-            Assert.AreEqual(expected, Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(answer)));
+            Assert.AreEqual(expected, answer);
         }
 
         [Test]
@@ -67,9 +67,9 @@ namespace SromTests
         {
 
             var hex11 = Program.Hex_to_Byte(aHex);
-            var answer = Program.Square(hex11);
+            var answer = Program.SquareTOStr(hex11);
            
-            Assert.AreEqual(expected, Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(answer)));
+            Assert.AreEqual(expected, answer);
         }
 
         [Test]
@@ -106,9 +106,9 @@ namespace SromTests
             var hex11 = Program.Hex_to_Byte(aHex);
             var hex22 = Program.Hex_to_Byte(bHex);
 
-            var answer = Program.Power(hex11, hex22);
+            var answer = Program.PowerToStr(hex11, hex22);
 
-            Assert.AreEqual(expected, Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(answer)));
+            Assert.AreEqual(expected, answer);
         }
 
 
@@ -125,9 +125,9 @@ namespace SromTests
         {
 
             var hex11 = Program.Hex_to_Byte(aHex);
-            var answer = Program.Inversed_Element(hex11);
+            var answer = Program.InvToString(hex11);
 
-            Assert.AreEqual(expected, Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(answer)));
+            Assert.AreEqual(expected, answer);
         }
 
 

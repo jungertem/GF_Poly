@@ -189,16 +189,13 @@ namespace Polinomial_Basis_Galua_Field
                 }
             }
 
-            return LengthCorrecting(result);
-        }
-
-        public static byte[] LengthCorrecting(byte[] a)
-        {
-            if (a.Length < 172)
+            while (result.Length < 172)
             {
-                Array.Resize(ref a, 173);
+                Array.Resize(ref result, 173);
+                break;
             }
-            return a;
+            return result;
+            
         }
 
         public static byte[] Mulltiplication(byte[] a, byte[] b)
@@ -220,7 +217,17 @@ namespace Polinomial_Basis_Galua_Field
             }
             result = Module_FX(result);
 
-            Array.Reverse(result);
+            //Array.Reverse(result);
+            return result;
+        }
+
+        public static string MulltiplicationToStr(byte []a, byte[] b)
+        {
+            var tempres = Program.Mulltiplication(a, b);
+            Array.Reverse(tempres);
+
+            var result = Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(tempres));
+
             return result;
         }
 
@@ -232,10 +239,20 @@ namespace Polinomial_Basis_Galua_Field
             for (int w = 0; w < a.Length; w++)
                 A[w << 1] = a[w];
             result = Module_FX(A);
-            Array.Reverse(result);
+            //Array.Reverse(result);
 
             return result;
         }
+
+        public static string SquareTOStr(byte[] a)
+        {
+            var tempres = Program.Square(a);
+            Array.Reverse(tempres);
+            var result = Binary_String_To_Hex_String(Byte_To_Binary_String(tempres));
+
+            return result;
+        }
+
 
         public static byte[] Trace(byte[] a)
         {
@@ -245,18 +262,19 @@ namespace Polinomial_Basis_Galua_Field
             for(int w = 1; w < 173; w++)
             {
                 temp = Square(temp);
-                Array.Reverse(temp);
+                //Array.Reverse(temp);
                 result = Addition(result, temp);
             }
 
             result = Module_FX(result);
-            Array.Reverse(result);
+            //Array.Reverse(result);
             return result;
         }
 
         public static string Trace_into_String(byte[] a)
         {
             var answer_temp = Trace(a);
+            Array.Reverse(answer_temp);
             string result = Binary_String_To_Hex_String(Byte_To_Binary_String(answer_temp));
             result = result.TrimStart('0');
 
@@ -294,6 +312,14 @@ namespace Polinomial_Basis_Galua_Field
             return res;
         }
 
+        public static string InvToString(byte[] a)
+        {
+            var tempres = Inversed_Element(a);
+            Array.Reverse(tempres);
+            var result =  Binary_String_To_Hex_String(Byte_To_Binary_String(tempres));
+            return result;
+        }
+
 
         public static byte[] Power(byte[] a, byte[] n)
         {
@@ -306,13 +332,22 @@ namespace Polinomial_Basis_Galua_Field
                 if(n[w] == 1)
                 {
                     result = Mulltiplication(result, a);
-                    Array.Reverse(result);
+                    //Array.Reverse(result);
                 }
                 a = Square(a);
-                Array.Reverse(a);
+                //Array.Reverse(a);
             }
 
-            Array.Reverse(result);
+            //Array.Reverse(result);
+            return result;
+        }
+        public static string PowerToStr(byte[] a, byte[] b)
+        {
+            var tempres = Program.Power(a, b);
+            Array.Reverse(tempres);
+
+            var result = Program.Binary_String_To_Hex_String(Program.Byte_To_Binary_String(tempres));
+
             return result;
         }
 
@@ -333,11 +368,13 @@ namespace Polinomial_Basis_Galua_Field
             //var hex11 = Hex_to_Byte(hex1);
             ////var hex22 = Hex_to_Byte(hex2);
 
-            var hex1 = Hex_to_Byte("12B0870C6ED04DC97F5175A45636D081315839BD7C3D");
-            //var hex2 = Hex_to_Byte("1CE16283C7B41EB0206704FAFA6FA3EEF7F9CA93A210");
-
-            var result = Inversed_Element(hex1);
-            ShowNumber(Binary_String_To_Hex_String(Byte_To_Binary_String(result)));
+            var hex1 = Hex_to_Byte("19676F7A5007F84A39FC651FECDA31EFA5FEA12531B9");
+            //var hex2 = Hex_to_Byte("1E0A261CD00D84F4830F11983E088B8A05BE16DF0443");
+            var result = SquareTOStr(hex1);
+            //Array.Reverse()
+            
+            
+            ShowNumber(result);
             ////Array.Reverse(result);
 
             //ShowNumber(Trace_into_String(hex11));
